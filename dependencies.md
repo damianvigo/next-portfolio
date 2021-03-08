@@ -1,1 +1,2 @@
 --- npm i react react-dom next ---
+--- npm i bootswatch ---
