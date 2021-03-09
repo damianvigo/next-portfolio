@@ -1,20 +1,21 @@
 import Layout from '../components/Layout';
-import { skills, experiencies } from '../profile';
+import Link from 'next/link';
+import { skills, experiencies, projects } from '../profile';
 
-console.log(skills);
-console.log(experiencies);
+// console.log(skills);
+// console.log(experiencies);
 
 const Index = () => (
   <Layout>
     {/* Header card */}
     <header className='row'>
-      <div className='col-md-12'>
-        <div className='card card-body bg-secondary text-light'>
-          <div className='row justify-content-center'>
-            <div className='col-md-12 col-lg-4 mb-3'>
+      <section className='col-md-12'>
+        <section className='card card-body bg-secondary text-light'>
+          <article className='row justify-content-center'>
+            <figure className='col-md-12 col-lg-4 mb-3'>
               <img src='/ryan-ray-profile2.jpeg' alt='ryan-ray' className='img-fluid' />
-            </div>
-            <div className='col-md-12 col-lg-8'>
+            </figure>
+            <article className='col-md-12 col-lg-8'>
               <h1>Rayn Ray</h1>
               <h3>FullStack Developer</h3>
               <p>
@@ -26,10 +27,10 @@ const Index = () => (
                 accusantium odio aspernatur incidunt? Eveniet commodi est modi fugit? Inventore, neque.
               </p>
               <a href='/hireme'>Hire Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </article>
+        </section>
+      </section>
     </header>
 
     {/* Second section */}
@@ -43,12 +44,14 @@ const Index = () => (
               <div className='py-3' key={i}>
                 <h5>{skill}</h5>
                 <div className='progress'>
-                  <div className='progress-bar' role='progressbar' style={{ width: `${percentage}%`}}
-                  aria-valuenow='50'
-                  aria-valuemin='0'
-                  aria-valuemax='100'
-                  >
-                  </div>
+                  <div
+                    className='progress-bar'
+                    role='progressbar'
+                    style={{ width: `${percentage}%` }}
+                    aria-valuenow='50'
+                    aria-valuemin='0'
+                    aria-valuemax='100'
+                  ></div>
                 </div>
               </div>
             ))}
@@ -60,30 +63,60 @@ const Index = () => (
           <div className='card-body d-flex flex-column justify-content-space-between'>
             <h1>Experience</h1>
 
-              <ul className='mt-4 mb-0'>
-                  {
-                    experiencies.map(({title, from, to, description}, index) => (
-                      <li key={index}>
-                        <h3>{title}</h3>
-                        <h5>{from}-{to}</h5>
-                        <p>
-                          {description}
-                        </p>
-                      </li>
-                    ))
-                  }
-              </ul>
-
+            <ul className='mt-4 mb-0'>
+              {experiencies.map(({ title, from, to, description }, index) => (
+                <li key={index}>
+                  <h3>{title}</h3>
+                  <h5>{from && to ? `${from}-${to}` : `${from}`}</h5>
+                  <p>{description}</p>
+                </li>
+              ))}
+            </ul>
           </div>
         </article>
       </section>
     </section>
-  
-    {/* Third Section */}
-  
-  
 
+    {/* Portfolio Section */}
 
+    <section className='row'>
+      <section className='col-md-12'>
+        <article className='card card-body bg-dark'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <h1 className='text-light text-center'>Portfolio</h1>
+            </div>
+
+            {projects.map(({ name, description, image }, i) => (
+              <div className='col-md-6 col-lg-4 p-2' key={i}>
+                <figure className='card h-100'>
+                  <div className='overflow'>
+                    <img src={`/${image}`} alt='' className='card-img-top' />
+                  </div>
+                  <div className='card-body'>
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <a href='#!'>Know more</a>
+                  </div>
+                </figure>
+              </div>
+            ))}
+          </div>
+          <div className='text-center mt-4'>
+            <Link href='/portfolio'>
+              <a className='btn btn-outline-light'>More Projects</a>
+            </Link>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    {/*     <style jsx>{
+      `.overflow {
+        
+      }`
+    }
+    </style> */}
   </Layout>
 );
 
