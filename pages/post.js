@@ -9,13 +9,13 @@ const Post = () => {
 
   const currentPost = posts.filter((post) => post.title === router.query.title)[0];
 
-  // console.log(currentPost);
+  console.log(currentPost);
 
   return (
-    <Layout footer={false} title={currentPost.title}>
-      <div className="text-center">
-        <img src={currentPost.imageURL} alt="" className='img-fluid' style={{width: '50%'}} />
-        <p className='p-3 w-50 m-auto'>{currentPost.content}</p>
+    <Layout footer={false} title={router.query.title}>
+      <div className='text-center'>
+      {/*   <img src={currentPost.imageURL} alt='' className='img-fluid' style={{ width: '50%' }} /> */}
+     {/*    <p className='p-3 w-50 m-auto'>{currentPost.content}</p> */}
       </div>
     </Layout>
   );
