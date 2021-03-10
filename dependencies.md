@@ -1,2 +1,4 @@
---- npm i react react-dom next ---
---- npm i bootswatch ---
+- - - npm i react react-dom next - - -
+- - - npm i bootswatch - - -
+- - - npm i nprogress - - -
+- - - npm i classnames - - -

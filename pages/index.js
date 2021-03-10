@@ -103,7 +103,7 @@ const Index = () => (
             ))}
           </div>
           <div className='text-center mt-4'>
-            <Link href='/portfolio'>
+            <Link href='/'>
               <a className='btn btn-outline-light'>More Projects</a>
             </Link>
           </div>
