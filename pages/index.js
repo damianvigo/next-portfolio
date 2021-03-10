@@ -6,12 +6,12 @@ import { skills, experiencies, projects } from '../profile';
 // console.log(experiencies);
 
 const Index = () => (
-  <Layout>
+  <Layout titleHead='home'>
     {/* Header card */}
     <header className='row'>
       <section className='col-md-12'>
         <section className='card card-body bg-secondary text-light'>
-          <article className='row justify-content-center'>
+          <article className='row justify-content-center align-items-center'>
             <figure className='col-md-12 col-lg-4 mb-3'>
               <img src='/ryan-ray-profile2.jpeg' alt='ryan-ray' className='img-fluid' />
             </figure>

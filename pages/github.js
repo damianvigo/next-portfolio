@@ -9,7 +9,7 @@ const Github = ({ user, statusCode }) => {
 
   // console.log(props.user);
   return (
-    <Layout footer={false} dark>
+    <Layout titleHead='github' footer={false} dark>
       <div className='row'>
         <div className='col-md-4 offset-md-4'>
           <div className='card card-body text-center'>

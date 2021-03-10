@@ -84,3 +84,7 @@ export const projects = [
     image: 'portfolio6.jpeg'
   },
 ]
+
+export const posts = [
+  
+]
