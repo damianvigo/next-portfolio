@@ -5,7 +5,6 @@ import NProgress from 'nprogress';
 import ClassNames from 'classnames';
 import Title from './Title';
 
-
 const Layout = ({ title, children, titleHead, footer = true, dark = false }) => {
   const router = useRouter();
 
@@ -36,7 +35,7 @@ const Layout = ({ title, children, titleHead, footer = true, dark = false }) => 
           {title && (
             <h1 className={ClassNames('text-center mb-5', {'text-light': dark})}>{title}</h1>
           )}
-      
+
       {children}
      </main>
 
