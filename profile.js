@@ -86,5 +86,19 @@ export const projects = [
 ]
 
 export const posts = [
-  
+  {
+    title: 'React',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus nisi cum perferendis consectetur nulla magni facere, eos architecto',
+    imageURL: 'https://midu.dev/images/react-hooks-use-state.png'
+  },
+  {
+    title: 'Svelte',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus nisi cum perferendis consectetur nulla magni facere, eos architecto',
+    imageURL: 'https://res.cloudinary.com/practicaldev/image/fetch/s--8-W-sE2g--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/7z45wj3cp8xoq7wje2fh.jpeg'
+  },
+  {
+    title: 'Vue',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus nisi cum perferendis consectetur nulla magni facere, eos architecto',
+    imageURL: 'https://i.ytimg.com/vi/DsuTwV0jwaY/maxresdefault.jpg'
+  },
 ]

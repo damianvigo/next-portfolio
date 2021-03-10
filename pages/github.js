@@ -15,9 +15,9 @@ const Github = ({ user, statusCode }) => {
           <div className='card card-body text-center'>
             <h1>{user.name}</h1>
             <img src={user.avatar_url} alt='' />
-            <p>{user.bio}</p>
+            <p className='pt-3'>{user.bio}</p>
             <a href={user.blog} target='_blank' rel='noreferrer' className='btn btn-outline-secondary my-2'>
-              My Blog
+              My Website
             </a>
             <a href={user.html_url} target='_blank' rel='noreferrer' className='btn btn-outline-secondary'>
               Go to Github

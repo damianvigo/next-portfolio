@@ -6,6 +6,10 @@ div#__next > div
   height: 100%;
 }
 
+.card-img-top {
+  height: 100%;
+}
+
 .overflow {
   height: 50%;
   overflow: hidden;
