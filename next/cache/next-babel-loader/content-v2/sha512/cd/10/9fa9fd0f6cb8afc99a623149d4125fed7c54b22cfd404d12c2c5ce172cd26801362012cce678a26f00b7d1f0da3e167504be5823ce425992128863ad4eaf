@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Head from 'next/head';\n\nconst Title = ({\n  titleHead\n}) => {\n  return /*#__PURE__*/_jsx(Head, {\n    children: /*#__PURE__*/_jsx(\"title\", {\n      children: titleHead\n    })\n  });\n};\n\nexport default Title;","map":null,"metadata":{},"sourceType":"module"}

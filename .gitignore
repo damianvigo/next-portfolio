@@ -10,7 +10,7 @@
 # dependencies
 /node_modules
 
-#cache
+# next.js build output
 .next
 
 # profiling files
