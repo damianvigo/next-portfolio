@@ -9,8 +9,8 @@ const Index = () => (
   <Layout titleHead='home'>
     {/* Header card */}
     <header className='row'>
-      <section className='col-md-12'>
-        <section className='card card-body bg-secondary text-light'>
+      <section className='col-md-12 pt-5'>
+        <section className='card card-body text-light' style={{background: '#666'}}>
           <article className='row justify-content-center align-items-center'>
             <figure className='col-md-12 col-lg-4 mb-3'>
               <img src='/ryan-ray-profile2.jpeg' alt='ryan-ray' className='img-fluid' />

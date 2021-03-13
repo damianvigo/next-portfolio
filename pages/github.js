@@ -11,7 +11,7 @@ const Github = ({ user, statusCode }) => {
   return (
     <Layout titleHead='github' footer={false} dark>
       <div className='row'>
-        <div className='col-md-4 offset-md-4'>
+        <div className='col-sm-8 col-md-8 col-lg-6 py-3 m-auto'>
           <div className='card card-body text-center'>
             <h1>{user.name}</h1>
             <img src={user.avatar_url} alt='' />

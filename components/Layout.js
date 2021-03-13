@@ -33,7 +33,7 @@ const Layout = ({ title, children, titleHead, footer = true, dark = false }) => 
       <main className='container py-4'>
 
           {title && (
-            <h1 className={ClassNames('text-center mb-5', {'text-light': dark})}>{title}</h1>
+            <h1 className={ClassNames('text-center mb-5 pt-5', {'text-light': dark})}>{title}</h1>
           )}
 
       {children}

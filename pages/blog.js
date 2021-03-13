@@ -3,7 +3,7 @@ import { posts } from '../profile';
 import Link from 'next/link';
 
 const PostCard = ({ post }) => (
-  <div className='col-md-4'>
+  <div className='col-sm-6 py-2 col-md-4'>
     <div className='card h-100'>
       <div className='overflow'>
         <img src={post.imageURL} className='card-img-top' alt='' />
